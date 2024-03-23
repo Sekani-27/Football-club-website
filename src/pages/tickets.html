@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+        <!-- <script>$(function() { alert('hello') });</script> -->
+        
+        <title>Chelsea | Tickets</title>
+        <nav>
+            <div class="topnav">
+                <a href="../../index.html">
+                    <div class="logo">
+                        <img src="../images/napoli.png" width="15px" height="14px">
+                    </div>
+                </a>  
+                <a href="../../index.html">Home</a>
+                <a href="players.html">Players</a> 
+                <a class="active" href="tickets.html">Tickets</a>           
+                <a href="shop.html">Shop</a>
+                <a href="news.html">News</a>
+                <div id="nav-right">
+                    <a href="./signup.html">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <body onload="login_redirect()">
+        <main>
+            <section id="tickets">
+                <div class="ticket_container">
+                    <div class="ticket_container1">
+                        <h1>Ticket Buy</h1>
+                        <p> To buy Ticket select an option below</p>
+                        <form>
+                            <select id ="ticket_group" name="ticket"  onchange="renderTicket(), tickt()">
+                                <option value="default" selected="selected"> None </option>
+                                <option value="vip"> VIP - $100 </option>
+                                <option value="gold"> GOLD - $75 </option>
+                                <option value="silv"> SILVER - $55 </option>
+                                <option value="brnz"> BRONZE - $25 </option>        
+                            </select>
+                            <br><br>
+                            
+                            <input type="reset" value="Reset" id="rest" onclick="reset_img()">
+                        </form>
+                            <div id="ticket_buy">
+                               <a href="payment_ticket.html"><button class="btn cart-btn">Buy Now</button></a>
+                            </div>
+                    </div>
+                    <div class="ticket_container2">
+                        <img id="ticket_img" src="https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" width="333px" height="200px">
+                        <!-- <p id="tkts">
+                            Ticket
+                        </p> -->
+                    </div>
+                </div>
+            </section>
+            
+
+       
+        </main>
+        <script src="../scripts/scripts.js"></script>
+    </body>
+
+    <footer>
+        <p>Ntando Miya &copy; 2024</p>
+        <p>, <a href="https://sscnapoli.it/en/privacy-policy/" target="_blank">Privacy Policy</a></p>
+    </footer>
+                
+</html>
+    
